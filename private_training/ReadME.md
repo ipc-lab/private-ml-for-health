@@ -46,7 +46,7 @@ In the following we explain how you can reproduce the results shown in Figure 1 
 
 Note that in FSCDP `--epochs=30001` is actually the number of iterations and not epochs. Based on the setting, `--epochs=30001` in FSCDP is similar to having 100 epochs in other FPDP and F setting. Moreover, `--sampling_prob= 0.03425` will translate into a batch size of 10 per user, 100 in total.
 
-### Secure aggregation with Homomorphic Encryption: (under development, so there might still be bugs)
+### 6. Secure aggregation with Homomorphic Encryption: (under development, so there might still be bugs)
 Install PySEAL by running the shell file `build_pyseal.sh`:
 ``` 
 > cd [path to build_pyseal.sh>]
