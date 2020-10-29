@@ -50,3 +50,17 @@ Note that in FSCDP `--epochs=30001` is actually the number of iterations and not
 ## Tutorial:
 
 Please see the file `JNotebook_running_FSCDP_on_Colab.ipynb` if you want to perform trainin on the Google Colab.
+
+## Secure aggregation with Homomorphic Encryption: (under development, so there might still be bugs)
+Install PySEAL by running the shell file `build_pyseal.sh`:
+``` 
+> cd [path to build_pyseal.sh>]
+> chmod +x build_pyseal.sh
+> ./build_pyseal.sh
+```
+This downloads and builds PySEAL from the source: https://github.com/Lab41/PySEAL.
+
+Ensure that mpi4py is installed. Else install it with `pip install mpi4py`.
+
+For running 3 processes, with rank 0 process being the server, and rank 1 and rank 2 processes being 2 federated workers (hospitals), run the following for training on MNIST dataset:
+> mpiexec -n 3 python src/FLDP_secure_aggreg.py --model=cnn --dataset=mnist --iid=1 --withDP=0 --local_bs=32 --num_users=2 --frac=.5 --local_ep=1 --epochs=20 --verbose=1000
