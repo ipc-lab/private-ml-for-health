@@ -18,9 +18,7 @@ from utils import test_inference
 from models import CNNMnist, CNNFashion_Mnist, CNNCifar
 from utils import average_weights, exp_details
 from datasets_secure import get_train_dataset, get_test_dataset
-from precision import prec, conv_int
 
-#### Moh ####
 from opacus.dp_model_inspector import DPModelInspector
 from opacus.utils import module_modification
 from mpi4py import MPI
