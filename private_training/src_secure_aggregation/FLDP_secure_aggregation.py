@@ -21,8 +21,8 @@ from datasets_secure import get_train_dataset, get_test_dataset
 from precision import prec, conv_int
 
 #### Moh ####
-#from opacus.dp_model_inspector import DPModelInspector
-#from opacus.utils import module_modification
+from opacus.dp_model_inspector import DPModelInspector
+from opacus.utils import module_modification
 from mpi4py import MPI
 import random
 import seal
@@ -201,7 +201,7 @@ if __name__ == '__main__':
             exit('Error: unrecognized model')
 
         ### DPSGD OPACUS ###
-        '''if args.withDP:
+        if args.withDP:
             try:
                 inspector = DPModelInspector()
                 inspector.validate(global_model)
@@ -210,7 +210,7 @@ if __name__ == '__main__':
                 global_model = module_modification.convert_batchnorm_modules(global_model)
                 inspector = DPModelInspector()
                 print(f"Is the model valid? {inspector.validate(global_model)}")
-                print("Model is convereted to be Valid!\n")'''
+                print("Model is convereted to be Valid!\n")
 
         u_steps = np.zeros(args.num_users)
         ###########
