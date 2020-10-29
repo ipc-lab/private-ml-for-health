@@ -58,7 +58,7 @@ This downloads and builds PySEAL from the source: https://github.com/Lab41/PySEA
 Ensure that mpi4py is installed. Else install it with `pip install mpi4py`.
 
 For running 3 processes, with rank 0 process being the server, and rank 1 and rank 2 processes being 2 federated workers (hospitals), run the following for training on MNIST dataset:
-> mpiexec -n 3 python src/FLDP_secure_aggreg.py --model=cnn --dataset=mnist --iid=1 --withDP=0 --local_bs=32 --num_users=2 --frac=.5 --local_ep=1 --epochs=20 --verbose=1000
+> mpiexec -n 3 python src_secure_aggregation/FLDP_secure_aggregation.py --model=cnn --dataset=mnist --iid=1 --withDP=0 --local_bs=32 --num_users=2 --frac=.5 --local_ep=1 --epochs=20 --verbose=1000
 
 ## Tutorial:
 
