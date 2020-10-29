@@ -4,7 +4,20 @@ This repository produces source code of the training stage for the proposed meth
 
 > In this repository we have used some part of codes from : https://github.com/AshwinRJ/Federated-Learning-PyTorch
 
-## How To Run Code
+## Dataset Preparation 
+
+To prepare the [diabetic retinopathy](https://www.kaggle.com/c/aptos2019-blindness-detection/notebooks?sortBy=scoreDescending) dataset:
+
+ 1. First (and just for one time) you need to run this file: `src/dr_dataset_to_numpy.py` with the following commmand:
+
+    > python src/dr_dataset_to_numpy.py --dataset=dr --dr_from_np=0
+
+ 2. Running the above command will take sometimes to download the dataset and transforms it into numpy arrays and saves it.
+ 
+ 3. After this is completed, for the rest of experiments you need to set `--dr_from_np=1`
+ 
+
+## How To Run Experiments
 
 In the following we explain how you can reproduce the results shown in Figure 1 of the report.
 

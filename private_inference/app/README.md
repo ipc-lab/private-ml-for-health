@@ -13,7 +13,8 @@ Install them from `requirements.txt`:
 
 Run the server:
 
-    python app.py
+    python app_private.py
 
 And then go to localhost:5000 in your browser.
-Please note that only jpeg/jpg files less than 1mb are accepted as input. *(This can be changed)*
+
+Example files that the demo will accept are in the example_inputs folder.
