@@ -51,7 +51,7 @@ Note that in FSCDP `--epochs=30001` is actually the number of iterations and not
 
 Please see the file `JNotebook_running_FSCDP_on_Colab.ipynb` if you want to perform trainin on the Google Colab.
 
-## Secure aggregation with Homomorphic Encryption: (under development, so there might still be bugs)
+### Secure aggregation with Homomorphic Encryption: (under development, so there might still be bugs)
 Install PySEAL by running the shell file `build_pyseal.sh`:
 ``` 
 > cd [path to build_pyseal.sh>]
