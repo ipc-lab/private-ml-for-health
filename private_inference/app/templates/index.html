@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      @media (min-width: 995px) {
+        #add_border {
+          border-right: 1px solid black;
+        }
+      }
+
+      .jumbotron {
+        margin-bottom: 70px;
+        padding: 15px;
+      }
+
+    </style>
+    <script src="https://kit.fontawesome.com/33b3cdea20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Healthcare app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h3>I******L Diagnostics: Private Federated Learning App Demo</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 text-center" id = "add_border">
+          <i class="fas fa-hospital-user fa-8x mb-1"></i>
+          <form class="form-signin" method=post enctype=multipart/form-data>
+            <p class="h4 mb-2 font-weight-normal">Upload your scan here! </p>
+              <input type="file" name="file" class="form-control-file mb-2" id="inputfile">
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Get Diagnosis</button>
+          </form>
+        </div>
+
+        <div class="col-lg-6 col-xs-12 text-center">
+          <i class="fas fa-laptop-code fa-8x mb-4"></i>
+          <div class="description">
+            <p>A <strong>global agent</strong> contains the model used for diagnosis. When you upload your scan, the agent sends its model to your app and inference is performed on your device.</p>
+            <p>This method keeps your data on your own device, and hence private.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $('#inputfile').bind('change', function() {
+          let ext = $('#inputfile').val().split('.').pop().toLowerCase();
+          if($.inArray(ext, ['jpg','jpeg', 'png']) == -1) {
+            $("#inputfile").val(null);
+            alert('only jpeg/jpg/png files are allowed!');
+          }
+      });
+    </script>
+  </body>
+</html>

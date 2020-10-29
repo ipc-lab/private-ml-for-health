@@ -32,3 +32,8 @@ In the following we explain how you can reproduce the results shown in Figure 1 
 
 
 Note that in FSCDP `--epochs=30001` is actually the number of iterations and not epochs. Based on the setting, `--epochs=30001` in FSCDP is similar to having 100 epochs in other FPDP and F setting. Moreover, `--sampling_prob= 0.03425` will translate into a batch size of 10 per user, 100 in total.
+
+
+## Tutorial:
+
+Please see the file `JNotebook_running_FSCDP_on_Colab.ipynb` if you want to perform trainin on the Google Colab.
