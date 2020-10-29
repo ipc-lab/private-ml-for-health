@@ -5,7 +5,7 @@
 import torch
 from torch import nn
 from torch.utils.data import DataLoader, Dataset
-#from opacus import FLPrivacyEngine
+from opacus import FLPrivacyEngine
 import numpy as np
 
 
