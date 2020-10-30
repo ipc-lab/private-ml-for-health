@@ -10,5 +10,9 @@
 4. `video_demo`: include some video demos showing how to run training and inference. For  `4. A Video of the demonstration of Proof-of-Concept.`
 
 
+# Live Demo:
 
+Please use this link to get a private inference on a Diabetic Retinopathy medical image:
+
+https://imperial-diagnostics.herokuapp.com/
 
