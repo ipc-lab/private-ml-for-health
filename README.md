@@ -12,6 +12,10 @@ While a vast amount of valuable medical data are available in institutions distr
 4. `video_demo`: include some video demos showing how to run training and inference. For  `4. A Video of the demonstration of Proof-of-Concept.`
 
 
+## Tutorial
+
+We provided a Jupyter Notebook for training on Google Colab. Please see the file `JNotebook_running_FSCDP_on_Colab.ipynb` in the `private_training` folder.
+
 # Live Demo:
 
 Please use this link to get a private inference on a Diabetic Retinopathy medical image:
