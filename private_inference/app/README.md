@@ -13,7 +13,7 @@ Install them from `requirements.txt`:
 
 Run the server:
 
-    python app_private.py
+    python app.py
 
 And then go to localhost:5000 in your browser.
 
