@@ -4,4 +4,4 @@ This folder contains a Proof-of-Concept video of the demo application the team h
 
 The demo is viewable at https://imperial-diagnostics.herokuapp.com.
 
-Source code is available in this repo, at `private-inference/app`.
+Source code is available in this repo, at `private_inference/app`.
