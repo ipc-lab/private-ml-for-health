@@ -4,7 +4,7 @@ This section contains the source code for a Proof-of-Concept demo app that patie
 
 ## Deployed App Demo
 
-The demo app has been [deployed on heroku](https://imperial-diagnostics.herokuapp.com) for ease of use.
+The demo app has been deployed on heroku on the followinng link: https://imperial-diagnostics.herokuapp.com.
 
 ## App Source Code
 
