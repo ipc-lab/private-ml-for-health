@@ -5,6 +5,8 @@ import torch
 import torchvision.transforms as transforms
 import torch.nn as nn
 import torch.nn.functional as F
+import urllib
+import os
 
 def get_model_from_global_agent():
     global_model = models.squeezenet1_1(pretrained=True)
@@ -12,7 +14,11 @@ def get_model_from_global_agent():
     global_model.num_classes = 5
     global_model.to(torch.device('cpu'))
     map_location=torch.device('cpu')
+    model_weights_link = 'https://drive.google.com/uc?id=11pb2yJKXgyYC9XnB9cd6HlNCFNxnlY1D'
+    model_weights_path = './model/squeezenet_0.pt'
+    urllib.request.urlretrieve(model_weights_link, model_weights_path)
     global_model.load_state_dict(torch.load("./model/squeezenet_0.pt", map_location=torch.device('cpu')))
+    os.remove(model_weights_path)
     global_model.eval()
     return global_model
 
