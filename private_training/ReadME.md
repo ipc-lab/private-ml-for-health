@@ -67,10 +67,8 @@ Please see the file `JNotebook_running_FSCDP_on_Colab.ipynb` if you want to perf
 
 * Updated for running Tutorial:
 
-  1. If you receive an error about `Nvidia CUDA`, then one solution is to remove the following line in the beginning of the tutorial:
-  
-  > !pip install torchcsprng==0.1.2+cu101 torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
-  
-  2. In the colab file system go to `usr —> local —> lib —> python 3.6 —> dist-packages —> opacus` and open `privacy_engine.py` and turn the line `import torchcsprng as csprng` into comment `#import torchcsprng as csprng`.
+If you receive an error about `Nvidia CUDA`, then there are two solutions at the moment:
 
-
+  1. In the first line at the beginning of the tutorial, use `torch==1.7.0+cu101` instead of `torch==1.6.0+cu101`.
+  
+  2. Or, remove that line and just use the second line to install `Opacus`, then restart the notebook, and finally in the colab system files go to `usr —> local —> lib —> python 3.6 —> dist-packages —> opacus` and open `privacy_engine.py` and turn the line `import torchcsprng as csprng` into comment `#import torchcsprng as csprng`.
