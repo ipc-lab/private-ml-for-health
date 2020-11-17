@@ -24,7 +24,7 @@ from opacus.utils import module_modification
 from opacus import PrivacyEngine
 
 
-def main(args):
+if __name__ == '__main__':
     
     ############# Common ###################
     args = args_parser()    
