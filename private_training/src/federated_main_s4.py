@@ -27,7 +27,7 @@ from opacus import PrivacyEngine
 def main(args):
     
     ############# Common ###################
-    # args = args_parser()    
+    args = args_parser()    
     if args.gpu:
         torch.cuda.set_device(args.gpu)
     device = 'cuda' if args.gpu else 'cpu'    
