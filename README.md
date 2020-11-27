@@ -28,7 +28,7 @@ Please find the most recent preprint of this project in the following link:
 https://github.com/ipc-lab/private-ml-for-health/blob/main/private_training/Dopamine.pdf
 
 ## Citation
-If you use the code or idea, please cite us as:
+If you find the provided code or the proposed algorithms useful, please cite this work as:
 ```
 @article{dopamine2020,
   title={Dopamine: Differentially Private Secure Federated Learning on Medical Data},
