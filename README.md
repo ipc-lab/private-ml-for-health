@@ -22,3 +22,18 @@ Please use this link to get a private inference on a Diabetic Retinopathy medica
 
 https://imperial-diagnostics.herokuapp.com/
 
+## Preprint
+Please find the most recent preprint of this project in the following link:
+
+https://github.com/ipc-lab/private-ml-for-health/blob/main/private_training/Dopamine.pdf
+
+## Citation
+If you use the code or idea, please cite us as:
+```
+@article{dopamine2020,
+  title={Dopamine: Differentially Private Secure Federated Learning on Medical Data},
+  author={Mohammad Malekzadeh, Burak Hasircioglu, Nitish Mital, Kunal Katarya, Mehmet Emre Ozfatura, Deniz Gündüz},  
+  url = {https://github.com/ipc-lab/private-ml-for-health}
+  year={2020}
+}
+```
