@@ -18,9 +18,11 @@ We provided a Jupyter Notebook for training on Google Colab. Please see the file
 
 # Live Demo:
 
-Please use this link to get a private inference on a Diabetic Retinopathy medical image:
+Please use this link to get an inference on a Diabetic Retinopathy medical image:
 
 https://imperial-diagnostics.herokuapp.com/
+
+(Note: implementing the pure private inference is still in progress...)
 
 ## Preprint
 Please find the most recent preprint of this project in the following link:
