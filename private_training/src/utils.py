@@ -13,7 +13,7 @@ def test_inference(args, model, test_dataset):
     loss, total, correct = 0.0, 0.0, 0.0
     device = 'cuda' if args.gpu else 'cpu'
     criterion = nn.CrossEntropyLoss().to(device)
-    testloader = DataLoader(test_dataset, batch_size=128,
+    testloader = DataLoader(test_dataset, batch_size=32,
                             shuffle=False)
     for batch_idx, (images, labels) in enumerate(testloader):
         images, labels = images.to(device), labels.to(device)
