@@ -25,8 +25,7 @@ def upload_file():
         if not file:
            return
         img_bytes = file.read()
-        file_tensor = transform_image(image_bytes=img_bytes) ########
-        #file_share_ptr = secret_share(file_tensor,workers,hospital)  # patient generates secret shares of the data and sends one share to the global agent.
+        file_tensor = transform_image(image_bytes=img_bytes) #######
         class_name = get_prediction(file_tensor)
         return render_template('result.html', class_name=class_name)
     return render_template('index.html')

@@ -65,3 +65,10 @@ For running 3 processes, with rank 0 process being the server, and rank 1 and ra
 Please see the file `JNotebook_running_FSCDP_on_Colab.ipynb` if you want to perform training on Google Colab.
 
 
+* Updated for running Tutorial:
+
+If you receive an error about `Nvidia CUDA`, then there are two solutions at the moment:
+
+  1. In the first line at the beginning of the tutorial, use `torch==1.7.0+cu101` instead of `torch==1.6.0+cu101`.
+  
+  2. Or, remove that line and just use the second line to install `Opacus`, then restart the notebook, and finally in the colab system files go to `usr —> local —> lib —> python 3.6 —> dist-packages —> opacus` and open `privacy_engine.py` and turn the line `import torchcsprng as csprng` into comment `#import torchcsprng as csprng`.
