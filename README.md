@@ -1,6 +1,6 @@
 # Dopamine: Differentially Private Secure Federated Learning on Medical Data
 
-- A submission to [ITU AI/ML in 5G Challenge](https://www.itu.int/en/ITU-T/AI/challenge/2020/Pages/default.aspx) for [ITU-ML-5G-PS-022](https://sites.google.com/view/iitd5g/challenge-problems/privacy-preserving-aiml-in-5g-networks-for-healthcare-applications)
+- Chosen as the best submission to [ITU AI/ML in 5G Challenge](https://www.itu.int/en/ITU-T/AI/challenge/2020/Pages/default.aspx) for [ITU-ML-5G-PS-022](https://sites.google.com/view/iitd5g/challenge-problems/privacy-preserving-aiml-in-5g-networks-for-healthcare-applications)
 
 While rich medical datasets are hosted in hospitals distributed across countries, concerns on patients' privacy is a barrier against utilizing such data to train deep neural networks (DNNs) for medical diagnostics.  We propose `Dopamine`, a system to train DNNs on distributed medical data, which employs federated learning (FL) with differentially-private stochastic gradient descent (DPSGD), and, in combination with secure multi-party aggregation, can establish a better privacy-utility trade-off than the existing approaches. Results on a diabetic retinopathy (DR) task show that `Dopamine` provides a privacy guarantee close to the centralized training counterpart, while achieving a better classification accuracy than FL with parallel differential privacy where DPSGD is applied without  coordination.
 
