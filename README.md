@@ -1,10 +1,15 @@
-# Dopamine: Differentially Private Secure Federated Learning on Medical Data
+# Dopamine: Differentially Private Federated Learning on Medical Data
+
+- Please read the paper here: https://arxiv.org/abs/2101.11693 
 
 - Chosen as the best submission to [ITU AI/ML in 5G Challenge](https://www.itu.int/en/ITU-T/AI/challenge/2020/Pages/default.aspx) for [ITU-ML-5G-PS-022](https://sites.google.com/view/iitd5g/challenge-problems/privacy-preserving-aiml-in-5g-networks-for-healthcare-applications)
 
-While rich medical datasets are hosted in hospitals distributed across countries, concerns on patients' privacy is a barrier against utilizing such data to train deep neural networks (DNNs) for medical diagnostics.  We propose `Dopamine`, a system to train DNNs on distributed medical data, which employs federated learning (FL) with differentially-private stochastic gradient descent (DPSGD), and, in combination with secure multi-party aggregation, can establish a better privacy-utility trade-off than the existing approaches. Results on a diabetic retinopathy (DR) task show that `Dopamine` provides a privacy guarantee close to the centralized training counterpart, while achieving a better classification accuracy than FL with parallel differential privacy where DPSGD is applied without  coordination.
 
-## Folders (Submission to ITU challenge):
+
+## Abstract 
+While rich medical datasets are hosted in hospitals distributed across the world, concerns on patients' privacy is a barrier against using such data to train deep neural networks (DNNs) for medical diagnostics. We propose Dopamine, a system to train DNNs on distributed datasets, which employs federated learning (FL) with differentially-private stochastic gradient descent (DPSGD), and, in combination with secure aggregation, can establish a better trade-off between differential privacy (DP) guarantee and DNN's accuracy than other approaches. Results on a diabetic retinopathy~(DR) task show that Dopamine provides a DP guarantee close to the centralized training counterpart, while achieving a better classification accuracy than FL with parallel DP where DPSGD is applied without coordination. 
+
+## Folders:
  
 1. `report`: includes the final report. For `1.Design document showing the reasons for the choice of privacy-preserving technique and the network architectural components.`
 2. `private_training`: includes the source code and a JupyterNotebook tutorial for training the privacy-preserving model explained in the report. For `2.Source code for the implementation of the privacy-preserving design across various architectural components.`
@@ -16,7 +21,7 @@ While rich medical datasets are hosted in hospitals distributed across countries
 
 We provided a Jupyter Notebook for training on Google Colab. Please see the file `JNotebook_running_FSCDP_on_Colab.ipynb` in the `private_training` folder.
 
-# Live Demo:
+## Live Demo:
 
 Please use this link to get an inference on a Diabetic Retinopathy medical image:
 
@@ -24,18 +29,15 @@ https://imperial-diagnostics.herokuapp.com/
 
 (Note: implementing the pure private inference is still in progress...)
 
-## Preprint
-Please find the most recent preprint of this project in the following link:
-
-https://github.com/ipc-lab/private-ml-for-health/blob/main/private_training/Dopamine.pdf
-
 ## Citation
 If you find the provided code or the proposed algorithms useful, please cite this work as:
 ```
-@article{dopamine2020,
-  title={Dopamine: Differentially Private Secure Federated Learning on Medical Data},
-  author={Mohammad Malekzadeh, Burak Hasircioglu, Nitish Mital, Kunal Katarya, Mehmet Emre Ozfatura, Deniz Gündüz},  
+@article{dopamine2021,
+  title={Dopamine: Differentially Private Federated Learning on Medical Data},
+  author={Malekzadeh, Mohammad and Hasircioglu, Burak and  Mital, Nitish and  Katarya, Kunal and Ozfatura,  Mehmet Emre and Gündüz, Deniz}, 
+  journal= {The Second AAAI Workshop on Privacy-Preserving Artificial Intelligence (PPAI-21)},
+  year={2021},
   url = {https://github.com/ipc-lab/private-ml-for-health}
-  year={2020}
 }
 ```
+
