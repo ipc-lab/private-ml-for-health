@@ -31,7 +31,7 @@ https://imperial-diagnostics.herokuapp.com/
 ## Citation
 If you find the provided code or the proposed algorithms useful, please cite this work as:
 ```bibtex
-@article{dopamine2021,
+@article{malekzadeh2021dopamine,
   title={Dopamine: Differentially Private Federated Learning on Medical Data},
   author={Malekzadeh, Mohammad and Hasircioglu, Burak and  Mital, Nitish and  Katarya, Kunal and Ozfatura,  Mehmet Emre and Gündüz, Deniz}, 
   journal= {The Second AAAI Workshop on Privacy-Preserving Artificial Intelligence (PPAI-21)},
